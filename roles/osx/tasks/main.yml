@@ -1,0 +1,13 @@
+- osx_defaults:
+    key: AppleLanguages
+    type: array
+    value:
+      - en
+      - zh-Hant
+
+- name: Dock
+  osx_defaults:
+    domain: com.apple.dock
+    key: autohide
+    type: bool
+    value: true
