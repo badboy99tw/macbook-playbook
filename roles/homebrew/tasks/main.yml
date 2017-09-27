@@ -1,0 +1,41 @@
+---
+- homebrew:
+    update_homebrew: yes
+
+- homebrew:
+    name: "{{ item.name }}"
+    state: latest
+  with_items:
+    - name: ack
+    - name: git
+    - name: git-flow
+    - name: go
+    - name: jq
+    - name: nvm
+    - name: pgcli
+    - name: postgresql
+    - name: pstree
+    - name: python3
+    - name: sqlite
+    - name: terraform
+    - name: tig
+    - name: vim
+    - name: wget
+    - name: youtube-dl
+
+- homebrew_cask:
+    name: "{{ item.name }}"
+    state: present
+  with_items:
+    - name: dash
+    - name: dropbox
+    - name: google-backup-and-sync
+    - name: google-chrome
+    - name: istat-menus
+    - name: iterm2
+    - name: pycharm
+    - name: spectacle
+    - name: ssh-tunnel-manager
+    - name: sublime-text
+    - name: webstorm
+    - name: welly
