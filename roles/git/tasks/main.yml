@@ -1,0 +1,14 @@
+---
+- git_config:
+    name: "{{ item.name }}"
+    scope: global
+    value: "{{ item.value }}"
+  with_items:
+    - { name: alias.cb, value: shortlog -s -n}
+    - { name: alias.ci, value: commit }
+    - { name: alias.co, value: checkout }
+    - { name: alias.hist, value: log --graph --date=short --oneline }
+    - { name: alias.st, value: status}
+    - { name: core.editor, value: vim}
+    - { name: user.email, value: taiwan.badboy99@gmail.com}
+    - { name: user.name, value: badboy99tw}
