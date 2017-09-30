@@ -1,0 +1,17 @@
+---
+- include_role:
+    name: geerlingguy.mas
+  vars:
+    mas_installed_apps:
+      - { name: "1Password OCR Pro", id: 443987910 }
+      - { name: "Evernote", id: 406056744 }
+      - { name: "FineReader OCR Pro", id: 687301476 }
+      - { name: "GarageBand", id: 682658836 }
+      - { name: "Kindle", id: 405399194 }
+      - { name: "Logic Pro X", id: 634148309 }
+      - { name: "Readmoo", id: 1051660169 }
+      - { name: "Slack", id: 803453959 }
+      - { name: "Telegram", id: 747648890 }
+      - { name: "Things 3", id: 904280696 }
+      - { name: "Tweetbot", id: 557168941 }
+      - { name: "Xcode", id: 497799835 }
