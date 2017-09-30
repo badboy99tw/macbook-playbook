@@ -1,0 +1,28 @@
+---
+- homebrew:
+    update_homebrew: yes
+
+- name: Install zsh
+  homebrew:
+    name: "{{ item.name }}"
+    state: latest
+  with_items:
+    - name: zsh
+    - name: zsh-completions
+
+- name: Installing oh-my-zsh
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh.git
+    dest: "~/.oh-my-zsh"
+    update: yes
+
+- name: Setup zsh as default shell
+  user:
+    name: "{{ ansible_ssh_user }}"
+    shell: /usr/local/bin/zsh
+
+- name: Setup zsh
+  template:
+    src: dot-zshrc.j2
+    dest: "/Users/{{ ansible_ssh_user }}/.zshrc"
+    mode: "0644"
