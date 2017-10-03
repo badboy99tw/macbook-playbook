@@ -1,0 +1,8 @@
+---
+- pip:
+    name: "{{ item.name }}"
+    executable: pip3
+  with_items:
+    - name: awslogs
+    - name: django
+    - name: ipython
