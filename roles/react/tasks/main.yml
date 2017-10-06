@@ -1,0 +1,10 @@
+---
+- name: Change node version to v4
+  shell: |
+    nvm install --lts=Argon
+    nvm use lts/Argon
+
+- name: Install react-native
+  npm:
+    name: create-react-native-app
+    global: yes
