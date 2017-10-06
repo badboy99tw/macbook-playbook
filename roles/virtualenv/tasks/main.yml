@@ -1,0 +1,15 @@
+---
+- pip:
+    name: virtualfish
+    executable: pip3
+
+- file:
+    path: ~/.virtualenvs
+    state: directory
+    mode: 0755
+
+- blockinfile:
+    path: ~/.config/fish/config.fish
+    marker: "# {mark} virtualfish setting"
+    content: |
+      eval (python3 -m virtualfish)
