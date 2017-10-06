@@ -16,10 +16,9 @@
     repo: git://github.com/passcod/nvm-fish-wrapper.git
     dest: ~/.config/fish/nvm-wrapper
 
-- lineinfile:
+- blockinfile:
     path: ~/.config/fish/config.fish
-    line: set -x NVM_DIR ~/.nvm
-
-- shell: |
-    set -x NVM_DIR ~/.nvm
-    source ~/.config/fish/nvm-wrapper/nvm.fish
+    marker: "# {mark} NVM setting"
+    content: |
+      set -x NVM_DIR ~/.nvm
+      source ~/.config/fish/nvm-wrapper/nvm.fish
