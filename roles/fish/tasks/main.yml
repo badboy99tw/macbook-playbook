@@ -37,6 +37,7 @@
 - name: Install omf plugins
   shell: "omf install {{ item }}"
   with_items:
+    - git-flow
     - weather
 
 - name: Install font tap
