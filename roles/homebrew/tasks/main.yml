@@ -21,6 +21,7 @@
     - name: terraform
     - name: tig
     - name: vim
+    - name: watchman
     - name: wget
     - name: youtube-dl
 

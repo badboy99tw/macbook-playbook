@@ -1,8 +1,8 @@
 ---
-- name: Change node version to v4
+- name: Change node version to v6
   shell: |
-    nvm install --lts=Argon
-    nvm use lts/Argon
+    nvm install --lts=boron
+    nvm use lts/boron
 
 - name: Install react-native
   npm:
