@@ -1,0 +1,25 @@
+---
+- homebrew:
+    name: nvm
+    state: latest
+
+- file:
+    path: ~/.nvm
+    state: directory
+    mode: 0755
+
+- shell: ln -s (brew --prefix nvm)/nvm.sh ~/.nvm/nvm.sh
+  args:
+    creates: ~/.nvm/nvm.sh
+
+- git:
+    repo: git://github.com/passcod/nvm-fish-wrapper.git
+    dest: ~/.config/fish/nvm-wrapper
+
+- lineinfile:
+    path: ~/.config/fish/config.fish
+    line: set -x NVM_DIR ~/.nvm
+
+- shell: |
+    set -x NVM_DIR ~/.nvm
+    source ~/.config/fish/nvm-wrapper/nvm.fish
