@@ -36,6 +36,7 @@
     - name: istat-menus
     - name: iterm2
     - name: pycharm
+    - name: rescuetime
     - name: spectacle
     - name: ssh-tunnel-manager
     - name: sublime-text
