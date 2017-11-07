@@ -1,10 +1,9 @@
 ---
-- name: Change node version to v6
-  shell: |
-    nvm install --lts=boron
-    nvm use lts/boron
+- homebrew:
+    name: yarn
+    state: latest
 
-- name: Install react-native
-  npm:
-    name: create-react-native-app
-    global: yes
+- name: Install tools
+  shell: "yarn global add {{ item.name }}"
+  with_items:
+    - name: create-react-native-app
