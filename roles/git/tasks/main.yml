@@ -1,4 +1,11 @@
 ---
+- name: Install diff-so-fancy
+  get_url:
+    url: https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/build_fatpack/diff-so-fancy
+    dest: "{{ ansible_env.HOME }}/bin/diff-so-fancy"
+    force: yes
+    mode: 0755
+
 - git_config:
     name: "{{ item.name }}"
     scope: global
@@ -10,5 +17,6 @@
     - { name: alias.hist, value: log --graph --date=short --oneline }
     - { name: alias.st, value: status}
     - { name: core.editor, value: vim}
+    - { name: core.pager, value: diff-so-fancy | less --tabs=4 -RFX}
     - { name: user.email, value: taiwan.badboy99@gmail.com}
     - { name: user.name, value: badboy99tw}
