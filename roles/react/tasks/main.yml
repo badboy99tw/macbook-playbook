@@ -7,3 +7,4 @@
   shell: "yarn global add {{ item.name }}"
   with_items:
     - name: create-react-native-app
+    - name: exp
