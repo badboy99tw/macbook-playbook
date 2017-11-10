@@ -33,9 +33,13 @@
 
 - name: Update oh-my-fish
   shell: omf update
+  args:
+    executable: /usr/local/bin/fish
 
 - name: Install omf plugins
   shell: "omf install {{ item }}"
+  args:
+    executable: /usr/local/bin/fish
   with_items:
     - git-flow
     - weather
@@ -54,3 +58,5 @@
   shell: |
     omf install bobthefish
     set -g theme_nerd_fonts yes
+  args:
+    executable: /usr/local/bin/fish
