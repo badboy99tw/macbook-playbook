@@ -21,6 +21,7 @@
     dest: "/Users/{{ ansible_ssh_user }}/.config/fish/config.fish"
     mode: "0644"
 
+# chsh -s /usr/local/bin/fish
 - name: Setup fish as default shell (not work)
   user:
     name: "{{ ansible_ssh_user }}"
@@ -49,6 +50,7 @@
     name: caskroom/fonts
     state: present
 
+# change font of iterm2 to Knack Nerd manually
 - name: Install font "Knack Nerd"
   homebrew_cask:
     name: font-hack-nerd-font
