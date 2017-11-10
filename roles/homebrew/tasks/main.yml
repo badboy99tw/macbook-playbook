@@ -40,7 +40,6 @@
     - name: rescuetime
     - name: spectacle
     - name: ssh-tunnel-manager
-    - name: sublime-text
     - name: webstorm
     - name: welly
     - name: xmind
