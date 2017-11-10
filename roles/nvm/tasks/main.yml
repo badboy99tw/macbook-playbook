@@ -11,6 +11,7 @@
 - shell: ln -s (brew --prefix nvm)/nvm.sh ~/.nvm/nvm.sh
   args:
     creates: ~/.nvm/nvm.sh
+    executable: /usr/local/bin/fish
 
 - git:
     repo: git://github.com/passcod/nvm-fish-wrapper.git
