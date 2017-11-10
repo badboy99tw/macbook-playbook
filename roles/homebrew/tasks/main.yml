@@ -11,6 +11,7 @@
     - name: git-flow
     - name: go
     - name: jq
+    - name: mercurial
     - name: npm
     - name: nvm
     - name: pgcli
@@ -40,7 +41,6 @@
     - name: rescuetime
     - name: spectacle
     - name: ssh-tunnel-manager
-    - name: sublime-text
     - name: webstorm
     - name: welly
     - name: xmind

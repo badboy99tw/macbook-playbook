@@ -1,0 +1,24 @@
+---
+- git:
+    repo: https://github.com/jisaacks/GitGutter.git
+    dest: "{{ package_root }}/GitGutter"
+
+- hg:
+    repo: ssh://hg@bitbucket.org/teddy_beer_maniac/sublime-text-dependency-markupsafe
+    dest: "{{ package_root }}/markupsafe"
+
+- git:
+    repo: https://github.com/facelessuser/sublime-markdown-popups.git
+    dest: "{{ package_root }}/mdpopups"
+
+- git:
+    repo: https://github.com/packagecontrol/pygments.git
+    dest: "{{ package_root }}/pygments"
+
+- hg:
+    repo: ssh://hg@bitbucket.org/teddy_beer_maniac/sublime-text-dependency-jinja2
+    dest: "{{ package_root }}/python-jinja2"
+
+- git:
+    repo: https://github.com/facelessuser/sublime-markdown.git
+    dest: "{{ package_root }}/python-markdown"

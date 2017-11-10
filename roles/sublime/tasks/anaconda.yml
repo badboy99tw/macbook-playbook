@@ -1,0 +1,8 @@
+---
+- git:
+    repo: https://github.com/DamnWidget/anaconda
+    dest: "{{ package_root }}/anaconda"
+
+- copy:
+    src: Anaconda.sublime-settings
+    dest: "{{ user_setting }}/Anaconda.sublime-settings"
