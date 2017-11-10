@@ -1,5 +1,9 @@
 ---
 - hosts: 127.0.0.1
+  vars_prompt:
+    - name: "ansible_sudo_pass"
+      prompt: "Sudo password"
+      private: yes
   roles:
     - osx
     - homebrew
