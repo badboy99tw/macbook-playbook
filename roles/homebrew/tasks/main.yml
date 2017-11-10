@@ -11,6 +11,7 @@
     - name: git-flow
     - name: go
     - name: jq
+    - name: mercurial
     - name: npm
     - name: nvm
     - name: pgcli

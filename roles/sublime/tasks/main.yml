@@ -9,3 +9,4 @@
     dest: "{{ user_setting }}/Preferences.sublime-settings"
 
 - include: anaconda.yml
+- include: gitgutter.yml
