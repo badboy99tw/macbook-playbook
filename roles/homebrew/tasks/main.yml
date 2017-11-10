@@ -17,6 +17,7 @@
     - name: postgresql
     - name: pstree
     - name: python3
+    - name: shellcheck
     - name: sqlite
     - name: terraform
     - name: tig
@@ -42,3 +43,4 @@
     - name: sublime-text
     - name: webstorm
     - name: welly
+    - name: xmind
