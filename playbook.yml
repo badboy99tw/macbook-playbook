@@ -5,10 +5,10 @@
     - homebrew
     - appstore
     - fish
+    - bin
     - git
     - nvm
     - react
     - pip
     - virtualenv
-    - bin
     - wakatime
