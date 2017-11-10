@@ -10,3 +10,4 @@
 
 - include: anaconda.yml
 - include: gitgutter.yml
+- include: wakatime.yml

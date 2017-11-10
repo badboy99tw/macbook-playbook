@@ -1,0 +1,8 @@
+---
+- git:
+    repo: https://github.com/wakatime/sublime-wakatime.git
+    dest: "{{ package_root }}/WakaTime"
+
+- template:
+    src: WakaTime.sublime-settings.j2
+    dest: "{{ user_setting }}/WakaTime.sublime-settings"
