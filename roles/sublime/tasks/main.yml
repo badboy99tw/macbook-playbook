@@ -2,3 +2,8 @@
 - homebrew_cask:
     name: sublime-text
     state: present
+
+- name: Configure
+  copy:
+    src: Preferences.sublime-settings
+    dest: "{{ user_setting }}/Preferences.sublime-settings"
