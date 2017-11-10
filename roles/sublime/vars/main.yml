@@ -1,0 +1,3 @@
+---
+package_root: "/Users/{{ ansible_ssh_user }}/Library/Application Support/Sublime Text 3/Packages"
+user_setting: "/Users/{{ ansible_ssh_user }}/Library/Application Support/Sublime Text 3/Packages/User"
