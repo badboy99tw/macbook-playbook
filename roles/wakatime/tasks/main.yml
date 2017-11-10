@@ -3,10 +3,10 @@
     name: wakatime
     executable: pip3
 
-- lineinfile:
-    path: ~/.wakatime.cfg
-    line: "{{ lookup('env','WAKATIME_API_KEY') }}"
-    create: yes
+- name: Configure
+  template:
+    src: wakatime.cfg.j2
+    dest: "/Users/{{ ansible_ssh_user }}/.wakatime.cfg"
 
 - get_url:
     url: https://raw.githubusercontent.com/Cyber-Duck/fish-wakatime/master/fish-wakatime.sh

@@ -4,6 +4,8 @@
     - name: "ansible_sudo_pass"
       prompt: "Sudo password"
       private: yes
+    - name: "wakatime_api_key"
+      prompt: "WakaTime api key"
   roles:
     - osx
     - homebrew
