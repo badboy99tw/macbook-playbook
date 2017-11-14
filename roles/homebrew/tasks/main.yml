@@ -31,16 +31,19 @@
     name: "{{ item.name }}"
     state: present
   with_items:
+    - name: controlplane
     - name: dash
     - name: dropbox
     - name: firefox
     - name: google-backup-and-sync
     - name: google-chrome
+    - name: google-cloud-sdk
     - name: istat-menus
     - name: iterm2
     - name: opera
     - name: pycharm
     - name: rescuetime
+    - name: sketch
     - name: spectacle
     - name: ssh-tunnel-manager
     - name: vivaldi
