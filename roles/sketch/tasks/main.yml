@@ -1,0 +1,7 @@
+---
+- homebrew:
+    update_homebrew: yes
+
+- homebrew_cask:
+    name: sketch
+    state: present
