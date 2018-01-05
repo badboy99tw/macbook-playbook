@@ -7,9 +7,11 @@
     state: latest
   with_items:
     - name: ack
+    - name: entr
     - name: git
     - name: git-flow
     - name: go
+    - name: heroku
     - name: jq
     - name: mercurial
     - name: npm
@@ -38,6 +40,7 @@
     - name: google-backup-and-sync
     - name: google-chrome
     - name: google-cloud-sdk
+    - name: insomnia
     - name: istat-menus
     - name: iterm2
     - name: opera
