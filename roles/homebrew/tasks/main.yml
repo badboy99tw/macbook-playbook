@@ -22,6 +22,7 @@
     - name: sqlite
     - name: terraform
     - name: tig
+    - name: tree
     - name: vim
     - name: watchman
     - name: wget
@@ -31,6 +32,7 @@
     name: "{{ item.name }}"
     state: present
   with_items:
+    - name: calibre
     - name: controlplane
     - name: dash
     - name: dropbox
